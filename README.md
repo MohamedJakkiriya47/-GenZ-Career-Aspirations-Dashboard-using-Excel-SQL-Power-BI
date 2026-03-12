@@ -129,6 +129,8 @@ ORDER BY average_salary DESC;
 
 # Excel Dashboard Insights
 
+![Excel Dashboard](images/EXCEL.png)
+
 The Excel dashboard focuses on learning preferences, team collaboration trends, and salary expectations.
 
 ## Work Setup Preference
@@ -189,6 +191,8 @@ The Power BI dashboard analyzes manager expectations, career drivers, and missio
 
 ## Manager Aspirations Dashboard
 
+![Excel Dashboard](images/MANAGER_ASPIRATION.png)
+
 This dashboard visualizes Gen-Z expectations from managers and career influencing factors.
 
 **Key Insights**
@@ -200,6 +204,8 @@ This dashboard visualizes Gen-Z expectations from managers and career influencin
 ---
 
 ## Mission Alignment Dashboard
+
+![Excel Dashboard](images/MISSION_ASPIRATION.png)
 
 This dashboard analyzes how Gen-Z career aspirations align with company missions and workplace values.
 
