@@ -1,299 +1,198 @@
-Gen-Z Career Aspiration Analysis (SQL | Excel | Power BI)
-Project Overview
+# Gen-Z Career Aspiration Analysis (SQL | Excel | Power BI)
 
-This project analyzes Gen-Z career aspirations, learning preferences, and workplace expectations using survey data collected from respondents across multiple countries.
+## Project Overview
 
-The goal of the analysis is to understand:
+This project analyzes **Gen-Z career aspirations, learning preferences, and workplace expectations** using survey data collected from respondents across multiple countries.
 
-What careers Gen-Z prefers
+### The goal of this analysis is to understand
 
-What factors influence their career choices
+- What careers **Gen-Z prefers**
+- What factors **influence their career choices**
+- Their **preferred learning styles**
+- Their **expectations from managers**
+- Their **preferred work environments**
+- **Salary expectations over time**
 
-Their preferred learning styles
+These insights help **organizations, recruiters, and educators design future-ready workplace strategies and career programs aligned with Gen-Z expectations.**
 
-Their expectations from managers
+---
 
-Their preferred work environments
+# Dataset Overview
 
-Salary expectations over time
+**Dataset:** Gen-Z Career Aspirations Survey  
 
-These insights help organizations, recruiters, and educators design future-ready workplace strategies and career programs aligned with Gen-Z expectations.
+- Total Participants: **3,934**
+- Male Respondents: **2,333**
+- Female Respondents: **1,597**
+- Countries Represented: **12**
+- Unique Pin Codes: **2,085**
 
-Dataset Overview
+### Dataset Fields
 
-Dataset: Gen-Z Career Aspirations Survey
+- Career Aspirations  
+- Career Influencing Factors  
+- Preferred Work Environment  
+- Learning Preferences  
+- Manager Type Preference  
+- Expected Salary  
+- Gender  
+- Country  
 
-Total Participants: 3,934
-Male Respondents: 2,333
-Female Respondents: 1,597
-Countries Represented: 12
-Unique Pin Codes: 2,085
+---
 
-Dataset Features
+# Tools Used
 
-The dataset contains the following fields:
+- **SQL (MySQL)** – Data analysis and aggregation  
+- **Excel** – Data cleaning and exploratory analysis  
+- **Power BI** – Dashboard visualization  
 
-Career Aspirations
+---
 
-Career Influencing Factors
+# Data Analysis Workflow
 
-Preferred Work Environment
+1. Data cleaning and preprocessing using **Excel**
+2. Data exploration and aggregation using **SQL queries**
+3. Dashboard development using **Power BI**
+4. Extracting insights and generating recommendations
 
-Learning Style Preferences
+---
 
-Manager Type Preference
+# SQL Analysis
 
-Expected Salary
+## Career Aspirations by Industry
 
-Gender
-
-Country
-
-Tools Used
-
-SQL (MySQL) – Data aggregation and analysis
-
-Excel – Data cleaning and exploratory analysis
-
-Power BI – Dashboard visualization and reporting
-
-Data Analysis Workflow
-
-Data cleaning and formatting in Excel
-
-SQL queries to analyze survey responses
-
-Building dashboards in Power BI
-
-Extracting insights and recommendations
-
-SQL Analysis
-1. Career Aspirations by Industry
+```sql
 SELECT Career_aspirations,
 COUNT(Career_aspirations) AS count
 FROM gen_z
 GROUP BY Career_aspirations
 ORDER BY COUNT(Career_aspirations) DESC;
+```
 
-Insight
+**Insight**
 
-Creative and design careers show the highest interest among respondents.
+- Creative and design careers show the highest interest.
+- Operations and business management roles are also popular.
+- Technology and AI careers are gaining popularity.
 
-Operations and business management roles are also highly preferred.
+---
 
-Technical roles such as AI and Data Analytics are gaining popularity.
+## Career Influencing Factors
 
-2. Career Influencing Factors
+```sql
 SELECT Career_influencing_factors,
 COUNT(Career_influencing_factors) AS count
 FROM gen_z
 GROUP BY Career_influencing_factors
 ORDER BY COUNT(Career_influencing_factors) DESC;
+```
 
-Insight
+**Insight**
 
-Parents and family influence career decisions the most.
+- Parents strongly influence career choices.
+- Social media and peer networks also impact decision-making.
 
-Social media and peer networks also play an important role.
+---
 
-3. Preferred Work Environment
+## Preferred Work Environment
+
+```sql
 SELECT Preferred_work_environment,
 COUNT(Preferred_work_environment) AS count
 FROM gen_z
 GROUP BY Preferred_work_environment
 ORDER BY COUNT(Preferred_work_environment) DESC;
+```
 
-Insight
+**Insight**
 
-Hybrid work environments are the most preferred.
+- Hybrid work environments are most preferred.
+- Remote work is also popular among Gen-Z.
+- Fully in-office roles are less preferred.
 
-Remote work is also popular among Gen-Z respondents.
+## Salary Expectations by Career
 
-Fully in-office work environments are less preferred.
-
-4. Salary Expectations by Career
+```sql
 SELECT Career_aspirations,
 AVG(Expected_salary) AS average_salary
 FROM gen_z
 GROUP BY Career_aspirations
 ORDER BY average_salary DESC;
+```
 
-Insight
+**Insight**
 
-Technology and AI careers show the highest expected salaries.
+- Technology and AI careers show the highest expected salaries.
+- Creative and education careers show moderate salary expectations.
 
-Creative and education careers show moderate salary expectations.
+---
 
-Excel Dashboard Insights
+# Excel Dashboard Insights
 
-The Excel dashboard focuses on learning preferences, team collaboration preferences, and salary expectations.
+The Excel dashboard focuses on learning preferences, team collaboration trends, and salary expectations.
 
-Work Setup Preference
+## Work Setup Preference
 
-1,919 respondents prefer working in teams of 5–6 members
+- 1,919 respondents prefer working in teams of 5–6 members
+- 1,626 respondents prefer teams of 2–3 members
+- 735 respondents prefer working alone
 
-1,626 respondents prefer teams of 2–3 members
+This shows Gen-Z prefers collaborative work environments with small teams.
 
-735 respondents prefer working alone
+---
 
-This indicates that Gen-Z strongly prefers small collaborative teams.
+## Learning Preferences
 
-Learning Preferences
+- 2,521 respondents prefer self-paced learning
+- Hands-on learning such as trial projects is also popular.
 
-2,521 respondents prefer self-paced learning
+This reflects Gen-Z’s preference for flexible and practical learning methods.
 
-Hands-on learning such as trial projects is also highly preferred.
+---
 
-This suggests that Gen-Z values flexible and practical learning methods.
+## Ideal Manager Type
 
-Ideal Manager Type
+Most respondents prefer managers who
 
-Most respondents prefer managers who:
-
-Clearly explain expectations
-
-Set goals and help employees achieve them
-
-Provide mentorship and guidance
+- Clearly explain expectations
+- Set goals and help employees achieve them
+- Provide mentorship and guidance
 
 Managers who set unrealistic expectations received very low support.
 
-Salary Expectations Trend
+---
 
-Average salary expectations increased between 2022 and 2024, followed by a slight decline in 2025.
+## Salary Expectations Trend
+
+Average expected salary increased from 2022 to 2024, followed by a decline in 2025.
 
 Possible reasons include:
 
-Economic uncertainty
+- Economic uncertainty
+- Market awareness changes
+- Adjusted expectations.
 
-Changing job market expectations
+---
 
-Increased awareness of market salaries
-
-Excel Dashboard Preview
-
-
-
-Total Participants
-
-Preferred Work Setup
-
-Preferred Learning Environment
-
-Ideal Manager Type
-
-Average Salary Trend
-
-Power BI Dashboard
+# Power BI Dashboard
 
 The Power BI dashboard analyzes manager expectations, career drivers, and mission alignment trends among Gen-Z respondents.
 
-Key Metrics
+## Dashboard Metrics
 
-Total Survey Responses: 39K
+- Total Survey Responses: 39K
+- Countries Represented: 12
+- 3-Year Average Salary Expectation: ₹38K
+- 5-Year Average Salary Expectation: ₹108K.
 
-Countries Represented: 12
+---
 
-Average 3-Year Salary Expectation: ₹38K
+## Manager Aspirations Dashboard
 
-Average 5-Year Salary Expectation: ₹108K
+This dashboard visualizes Gen-Z expectations from managers and career influencing factors.
 
-Manager Aspirations Dashboard
+**Key Insights**
 
-This dashboard focuses on Gen-Z expectations from managers and career influences.
-
-Key Insights
-
-The most preferred manager type is “Explains Expectations and Supports Goals.”
-
-Goal-oriented leadership styles are more valued than strict authority.
-
-Parents and close networks strongly influence career decisions.
-
-Manager Dashboard Preview
-
-📌 ADD SCREENSHOT 2 HERE
-
-Insert the Manager Aspirations Power BI dashboard screenshot here.
-
-Example:
-
-![Manager Aspirations Dashboard](images/manager_dashboard.png)
-Mission Alignment Dashboard
-
-This dashboard explores whether Gen-Z career goals align with company missions and workplace values.
-
-Key Insights
-
-The Design / Creative sector shows the highest misalignment between career aspirations and company missions.
-
-Operations and Business Management also show noticeable gaps.
-
-Hybrid and remote work trends peaked in 2023, indicating strong demand for flexible work models.
-
-Mission Alignment Dashboard Preview
-
-📌 ADD SCREENSHOT 3 HERE
-
-Insert the Mission Alignment Power BI dashboard screenshot here.
-
-Example:
-
-![Mission Alignment Dashboard](images/mission_dashboard.png)
-Key Insights
-Career Aspirations
-
-Creative and business roles attract the most interest among Gen-Z respondents.
-
-Manager Expectations
-
-Gen-Z prefers managers who provide:
-
-Clear expectations
-
-Goal-oriented leadership
-
-Mentorship support
-
-Work Environment Preferences
-
-Hybrid and remote work models are strongly preferred, especially in:
-
-Technology
-
-Creative industries
-
-Business roles
-
-Career Influencing Factors
-
-Top factors influencing career decisions include:
-
-Parents
-
-Social media
-
-Friends and peer networks
-
-Recommendations
-For Organizations
-
-Build collaborative work environments
-
-Promote mentorship-based management
-
-Provide flexible work options
-
-For Educators
-
-Offer self-paced learning programs
-
-Integrate project-based learning
-
-For Recruiters
-
-Align job roles with Gen-Z workplace expectations
-
-Promote purpose-driven company culture
-
-Use digital platforms to attract young talent
+- The most preferred manager type is "Explains Expectations and Supports Goals"
+- Goal-oriented leadership styles are highly valued
+- Parents and social networks strongly influence career decisions
