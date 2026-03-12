@@ -1,57 +1,67 @@
-1. What industries are Gen-Z most interested in pursuing careers in?
-SQL Query:
-SELECT Career_aspirations, COUNT(Career_aspirations) AS count
+# SQL Analysis
+
+## Career Aspirations by Industry
+
+```sql
+SELECT Career_aspirations,
+COUNT(Career_aspirations) AS count
 FROM gen_z
 GROUP BY Career_aspirations
 ORDER BY COUNT(Career_aspirations) DESC;
+```
 
-Insights:
-- High interest in Content Creation, Business, and Tech Careers -> Indicates strong demand for skills in Digital Marketing, Entrepreneurship, Data Science, and Software Development.
-- Low interest in BPO, Sales, and Manufacturing -> May suggest a gap in exposure, resources, or interest in traditional career paths.
-- Careers in Freelancing, AI, and Data Analytics are gaining popularity -> Points to a shift towards autonomy, innovation, and technology-driven roles.
+**Insight**
 
-2. What are the top factors influencing Gen-Z's career choices?
-SQL Query:
-SELECT Career_influencing_factors, COUNT(Career_influencing_factors) AS count
+- Creative and design careers show the highest interest.
+- Operations and business management roles are also popular.
+- Technology and AI careers are gaining popularity.
+
+---
+
+## Career Influencing Factors
+
+```sql
+SELECT Career_influencing_factors,
+COUNT(Career_influencing_factors) AS count
 FROM gen_z
 GROUP BY Career_influencing_factors
 ORDER BY COUNT(Career_influencing_factors) DESC;
+```
 
-Insights:
-- Work-life balance, Salary/Benefits, and Passion/Interest are leading influencers -> Suggests Gen-Z values purpose, well-being, and financial stability.
-- Job Security and Learning Opportunities also rank high -> Indicates that long-term growth and stability are crucial.
-- Parental Influence and Peer Trends are less significant -> Shows Gen-Z is making independent and value-driven decisions.
+**Insight**
 
-3. What is the desired work environment for Gen-Z?
-SQL Query:
-SELECT Preferred_work_environment, COUNT(Preferred_work_environment) AS count
+- Parents strongly influence career choices.
+- Social media and peer networks also impact decision-making.
+
+---
+
+## Preferred Work Environment
+
+```sql
+SELECT Preferred_work_environment,
+COUNT(Preferred_work_environment) AS count
 FROM gen_z
 GROUP BY Preferred_work_environment
 ORDER BY COUNT(Preferred_work_environment) DESC;
+```
 
-Insights:
-- Majority prefer Hybrid work settings -> Indicates a strong demand for flexibility and autonomy while maintaining some in-person collaboration.
-- Remote Work is also highly favored -> Emphasizes convenience and a digital-first mindset.
-- Lower preference for Fully In-office roles -> May lead to talent shortages in traditional work environments unless they adapt.
+**Insight**
 
-4. How do financial goals, such as salary and benefits, impact career aspirations among Gen-Z?
-SQL Query:
-SELECT Career_aspirations, AVG(Expected_salary) AS average_salary
+- Hybrid work environments are most preferred.
+- Remote work is also popular among Gen-Z.
+- Fully in-office roles are less preferred.
+
+## Salary Expectations by Career
+
+```sql
+SELECT Career_aspirations,
+AVG(Expected_salary) AS average_salary
 FROM gen_z
 GROUP BY Career_aspirations
 ORDER BY average_salary DESC;
+```
 
-Insights:
-- Careers in Tech, Entrepreneurship, and Finance have the highest average salary expectations -> Reflects a link between perceived earning potential and career interest.
-- Lower salary expectations in Social Work, Teaching, or Art-based careers -> Suggests financial gain is not always the primary motivator in value-driven fields.
-- Overall, salary remains a critical factor in career selection but is often balanced with passion and purpose.
+**Insight**
 
-5. What role do personal values and social impact play in career choices for Gen-Z?
-SQL Query:
-SELECT COUNT(*) AS value_driven_count
-FROM gen_z
-WHERE Career_influencing_factors LIKE '%Social Impact%' OR Career_influencing_factors LIKE '%Personal Values%';
-
-Insights:
-- A significant portion of Gen-Z respondents value social impact and ethical alignment with their work -> Indicates growing demand for purpose-driven careers.
-- Careers in NGOs, Sustainability, and Healthcare are seen as 
+- Technology and AI careers show the highest expected salaries.
+- Creative and education careers show moderate salary expectations.
