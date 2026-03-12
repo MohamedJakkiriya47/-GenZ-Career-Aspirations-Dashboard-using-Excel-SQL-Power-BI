@@ -195,4 +195,69 @@ This dashboard visualizes Gen-Z expectations from managers and career influencin
 
 - The most preferred manager type is "Explains Expectations and Supports Goals"
 - Goal-oriented leadership styles are highly valued
-- Parents and social networks strongly influence career decisions
+- Parents and social networks strongly influence career decisions.
+
+---
+
+## Mission Alignment Dashboard
+
+This dashboard analyzes how Gen-Z career aspirations align with company missions and workplace values.
+
+**Key Insights**
+
+- Design / Creative sector shows the highest misalignment
+- Operations and business management roles also show gaps
+- Hybrid and remote work preferences peaked in 2023.
+
+---
+
+# Key Insights
+
+**Career Aspirations**
+
+Creative and business roles attract the highest interest among Gen-Z respondents, while technology fields like AI and data analytics are growing rapidly.
+
+**Manager Expectations**
+
+Gen-Z prefers managers who
+
+- Provide clear expectations
+- Support goal achievement
+- Offer mentorship and guidance
+
+**Work Environment Preferences**
+
+Hybrid and remote work environments are strongly preferred, especially in
+
+- Technology
+- Creative industries
+- Business roles
+
+**Career Influencing Factors**
+
+Top factors influencing career decisions include
+
+- Parents
+- Social media
+- Friends and peer networks
+  
+---
+
+# Recommendations
+
+## For Organizations
+
+- Build collaborative work environments
+- Promote mentorship-based leadership
+- Offer flexible work models such as hybrid and remote work.
+
+## For Educators
+
+- Provide self-paced learning programs
+- Integrate project-based learning
+
+## For Recruiters
+
+- Align job roles with Gen-Z expectations
+- Highlight mission-driven company culture
+- Use digital platforms to engage young talent
